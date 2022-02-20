@@ -1,0 +1,333 @@
+/* 
+	template.css
+	Copyright (c) 2021 by Jacquelyn Michele Cieri
+	All Rights Reserved
+	
+
+*/
+/*  Color pallet..............................................
+#000000 - black
+#ffffff - white
+#0000cc - logo blue
+#00004d - darkest blue
+#4040d5 - medium blue
+#4d4d83 - blue purple
+
+
+
+*/
+/* 	Tag Selector Section......................................*/
+
+body {
+	background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    color: #4040d5;
+    font-weight: 700;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 50px;
+}
+
+h2 {
+    color: #4d4d83;
+    font-weight: 400;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 36px;
+}
+
+h3 {
+    color: #000000;
+    font-weight: 400;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 28px;
+}
+
+h4 {
+    color: #000000;
+    font-weight: 400;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 20px;
+}
+
+h5 {
+    color: #000000;
+    font-weight: 700;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 15px;
+
+}
+
+h6 {
+    color: #000000;
+    font-weight: 400;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 10px;
+    font-style: italic;
+}
+
+p {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+ul, ol {
+    display:inline-block;
+    text-align:left;
+}
+
+ul {
+  list-style: none;
+}
+
+
+ul li::before {
+    content: "•"; 
+    color: #00004d;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+}
+
+ol {
+    list-style: none; 
+    counter-reset: li;
+}
+
+ol li {
+    counter-increment: li
+}
+
+ol li::before {
+    content: counter(li); 
+    color: #00004d;
+    
+    font-size: 1.1em;
+    font-weight: bold;
+    display: inline-block; width: 1em;
+    margin-left: -1em
+}
+
+cite {
+    font-size: .8em;
+}
+
+sup {
+    font-size: .7em;
+    font-style: italic;
+}
+
+hr {
+    border: 2px solid #00004d;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+
+table {
+    width: 80% !important;
+    border: 5px solid #00004d;
+}
+
+td {
+	text-align: center;
+}
+
+thead tr th {
+	text-align: center;
+    height: 70px !important;
+    background-color: #00004d;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-family: 'Libre Caslon Text', serif;
+    
+}
+tfoot {
+	font-size: .75em;
+	font-style: italic;
+    background-color: #00004d;
+    color: #ffffff;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+table tbody tr:nth-child(odd) td, 
+table tbody tr:nth-child(odd) th {
+   background-color: rgba(0, 0, 77, .3);
+ }
+
+
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+   /* display: inline-block; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 200px;
+    
+}
+
+select {
+    width: 250px;
+    font-size: .75em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+fieldset label {
+    font-size: .75em;
+}
+
+::placeholder {
+  font-size: .75em;
+}
+
+
+
+/*	Class Selector Section...................................*/
+
+.container-fluid {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+	width: 100%;
+    background-color: #ffffff;
+}
+
+.col-sm-6 {
+    text-align: center;
+}
+
+.subhead {
+    color: #4040d5;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #00004d;
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  z-index:1; 
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+   color: #ffffff;
+   font-size: 16px;
+    font-family: 'Libre Caslon Text', serif;
+    text-align: center;
+    border-right-style: solid;
+    border-right-color: #ffffff;
+    border-right-width: thin;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:last-of-type
+{
+
+    border-right-style: none;
+}
+
+
+.navbar a:hover {
+  background: #ffffff;
+  color: black;
+}
+
+
+.main {
+  margin-top: 100px; 
+}
+
+.main div:first-of-type {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.main div:not(first-of-type) {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.sectionhead {
+    text-decoration: underline;
+}
+
+.btn-dark {
+    color: #ffffff;
+    background-color: #00004d;
+    border:5px solid #00004d;
+    border-radius: 25px;
+}
+
+.btn-dark:focus, .btn-dark:hover {
+   box-shadow: none; 
+        color: #000000;
+    background-color: #ffffff;
+    border:5px solid #00004d;
+
+}
+
+.btn-light {
+    color: #000000;
+    background-color: #ffffff;
+    border:5px solid #00004d;
+    border-radius: 25px;
+}
+
+.btn-light:focus, .btn-light:hover {
+    box-shadow: none ; 
+    color: #ffffff;
+    background-color: #00004d;
+    border:5px solid #00004d;
+}
+
+.logo {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: 7%;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/*	ID Selector Section......................................*/
+
+#unique {
+
+}
+
+
